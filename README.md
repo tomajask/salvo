@@ -10,12 +10,12 @@ My Docker setup for great tool which is https://github.com/tarekziade/salvo.
 
 Pull the Docker image from [Github Container Registry](https://github.com/users/tomajask/packages/container/package/salvo):
 ```shell
-docker pull ghcr.io/tomajask/salvo:latest
+docker pull ghcr.io/tomajask/salvo/salvo:latest
 ```
 
 Run the Salvo:
 ```shell
-docker run --rm -it ghcr.io/tomajask/salvo salvo http://example.com -c 10 -d 2
+docker run --rm -it ghcr.io/tomajask/salvo/salvo salvo http://example.com -c 10 -d 2
 ```
 
 ### 2. Clone the repo and follow instructions below:
