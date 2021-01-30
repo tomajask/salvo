@@ -6,6 +6,20 @@ My Docker setup for great tool which is https://github.com/tarekziade/salvo.
 
 ## Usage
 
+### 1. Use the Docker image:
+
+Pull the Docker image from [Github Container Registry](https://github.com/users/tomajask/packages/container/package/salvo):
+```shell
+docker pull ghcr.io/tomajask/salvo:latest
+```
+
+Run the Salvo:
+```shell
+docker run --rm -it ghcr.io/tomajask/salvo salvo http://example.com -c 10 -d 2
+```
+
+### 2. Clone the repo and follow instructions below:
+
 Run `salvo` for `http://example.com` website with concurrency `1000` for `40` seconds.
 ```shell
 make run ARGS="http://example.com -c 1000 -d 40"
